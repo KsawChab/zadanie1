@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+function WinClose_chabowski()
+{
+window.close();
+}
+function show_prompt()
+{
+var name=prompt("Napisz imię","Imię Nazwisko");
+if (name!=null && name!="")
+{
+document.write("Witaj " + name + "! jak się masz?");
+}
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+<input type="button" name="zamknij okno" value="zamknij" onclick="WinClose_chabowski(' ')">
+</body>
+</html>
