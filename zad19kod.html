@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+  <textarea col="20" rows="30">
+    <html>
+        <head>
+        <title> Obliczanie pola i obwodu prostokata </title>
+         <script language="JavaScript">
+        function pole_chabowski(a,b)
+        {
+         a_dana_cha=parseFloat(a)
+         b_dana_cha=parseFloat(b)
+         pole_wynik=a_dana_cha * b_dana_cha
+         document.getElementsByName('ppa')[0].value=pole_wynik.toFixed(2); /* na dokument */
+         alert("Pole="+pole_wynik.toFixed(2)+" cm"); /*do okna Alert */
+         wyprowadz_pole_cha.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>"; /* do tabeli */
+        }
+        function obwod_chabowski(a,b)
+        {
+         a_dana_cha=parseFloat(a)
+         b_dana_cha=parseFloat(b)
+         obwod_wynik=a_dana_cha+b_dana_cha+a_dana_cha+b_dana_cha
+         document.getElementsByName('obc')[0].value=obwod_wynik.toFixed(2);
+         alert("Obwod="+obwod_wynik.toFixed(2)+" cm^2");
+         wyprowadz_obwod_cha.innerHTML="Obwod="+obwod_wynik.toFixed(2)+"cm";
+        }
+         </script>
+         </head>
+        <body>
+        <script type="text/javascript">
+        function okno_zamknij()
+        {
+        window.close()
+        }
+        </script> 
+        Obliczanie pola i obwodu prostokata
+        <br> 
+        <br>
+        <form name="formularz" action="..." onsubmit="obwod_chabowski(this.wys.value,this.dl.value);
+        pole_chabowski(this.wys.value,this.dl.value);return false">
+        Podaj a=
+        <input size="6" name="wys">
+        Podaj b=
+        <input size="6" name="dl">
+        <br>
+        <br>
+        <input TYPE="submit" Value="oblicz" >
+        <br>
+        <br>
+        Obwod=
+        <input size="6" name="ppa">
+        Pp=
+        <input size="6" name="obc">
+        </form>
+        <table>
+        <tr id="wyprowadz_pole_cha"></tr>
+        <tr id="wyprowadz_obwod_cha"></tr>
+        </table><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+        </body>
+        </html>
+</textarea>
+  </body>
+</html>

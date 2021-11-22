@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+  <head></head>
+  <body>
+	<ol>
+	<li>Wymień cztery sposoby wyprowadzania danych w JS ?<br><br>
+	Cztery sposoby <b><u>wyprowadzania</u></b> danych na stronę:<br><br>
+	<ol>
+	<li>z użyciem dokument.write()
+	<li>z użyciem okienka alert()
+	<li>do okienek formularza
+	<li>do tabeli
+	</ol><br><br>
+	
+	<li>Czym jest funkcja w JS, omów przy użyciu 4 podpunktów ?
+	<b>Co to jest funkcja?</b> <br><br>
+	<ol>
+	<li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,
+	<li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,
+	<li>Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b),
+	<li>Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym <b>return.</b>
+	</ol>	
+	<br><br>
+	<li>Omów metody <b> getElementsByName, getElementById, getElementByTagName</b> (może być w postaci tabeli)<br><br>
+		<table border=1>
+	<tr><td>
+			<b>metoda</b>
+		</td><td>
+			<b>opis</b>
+		</td>
+	</tr><tr>
+		<td>
+			getElementById(„id”) 
+		</td><td>
+			dostęp do wszystkich elementów o konkretnej <br>
+			wartości atrybutu id
+		</td>
+	</tr><tr>
+		<td>
+			getElementByTagName(„znacznik”)
+		</td><td>
+			dostęp do wszystkich elementów o typie <br>
+			znacznika, np. P lub DIV 
+		</td>
+	</tr><tr>
+		<td>
+			getElementByName(„nazwa”)
+		</td><td>
+			dostęp do wszystkich elementów o konkretnej <br>
+			wartości atrybutu
+		</td>
+	</tr>	
+	</table>
+	<br><br>
+
+	<li> Omów właściwości <b>innerHTML innerText className.</b><br><br>
+		<b><u>Właściwości tak pobranego elementu to:</u></b><br><br>
+		- <b>innerHTML</b> – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w <br>
+		tabeli, <br>
+		- <b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie, <br>
+		- <b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.<br><br>
+		Przykład<br>
+		<textarea col="20" rows="30">
+			<!DOCTYPE html> 
+			<head> 
+			<title> Przykłady dostępu do elementów </title> 
+			<meta charset="utf-8"> 
+			<style type="text/css"> 
+			.wyroznienieCzerwone { color: Red; font-weight: 600; } 
+			</style>
+			</head> 
+			<body> 
+			<div id="nazwa"></div> 
+			<script>
+			document.getElementById("nazwa").innerHTML = "Witaj"; 
+			document.getElementById("nazwa").className = "wyroznienieCzerwone"; 
+			</script> 
+		   </body>
+		  
+		  </textarea>
+
+	
+	
+	</ol>
+  </body>
+</html>
