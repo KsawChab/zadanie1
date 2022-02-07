@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div>
+        <script>
+                var a = prompt("Podaj liczbe a: ");
+                var b = prompt("Podaj liczbe b: ");
+            
+            a = parseInt(a); 
+            b = parseInt(b);
+            let c = "\u00a0";
+
+            for(let i = 1; i<=b; i++){
+                document.write("*");
+            }
+            for(let i = 1; i<=a; i++){
+                document.write("<br>"+"*"+c.repeat(b*2-4)+"*"+"<br>");
+            }
+            for(let i = 1; i<=b; i++){
+                document.write("*");
+            }
+        </script>
+    </div>
+</body>
+</html>

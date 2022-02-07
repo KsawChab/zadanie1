@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <textarea col="20" rows="30">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        let a = prompt("Podaj a: ")
+        let b = prompt("Podaj b: ")
+        a = parseInt(a)
+        b = parseInt(b)
+
+        if(a > b){
+            for(; b <= a; a--){
+                if(a%2 == 1){
+                    document.write("<font color = green size = 20px>"+a+"<br></font>")
+                }
+            }
+        }else if(b>a){
+            for(; a <= b; a++){
+                if(a%2 == 1){
+                    document.write("<font color = blue size = 40px>"+a+"<br></font>")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+</textarea>
+</body>
+</html>
