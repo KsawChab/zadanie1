@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <textarea col="20" rows="30">
+<html>
+<head>
+<title> Zadanie 82</title>
+ <script language="JavaScript">
+ function pushbutton() {
+ alert("Czesc !");}
+ </script>
+</head>
+<body>
+    <span style="color: red"><h1>Chabowski</h1></span>
+    <span style="color: green">
+dzis = new Date()-->
+Tworzy instancje Date, które pozwalają na pracę z danymi opisującymi datę i czas.<br>
+dzis = dzis.getHours()--> 
+Zwraca godzinę określonej daty, stosownie do czasu lokalnego.<br>
+dzis = dzis.getMinutes()-->
+Zwraca minuty dla określonej daty w zależności od czasu lokalnego.<br>
+dzis = dzis.getDate()-->
+Zwraca dzień miesiąca dla określonej daty stosownie do czasu lokalnego.<br>
+dzis = dzis.getFullYear()-->
+Zwraca rok określonej daty, stosownie do czasu lokalnego.<br><br>
+</span>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+ document.write(document.lastModified,"<br>")
+</script>
+<form>
+ <input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+ dzis = new Date()
+ document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+ document.write("<br>Aktualna data : ,",dzis.getDate(),",",dzis.getMonth()+1,",",dzis.getFullYear());
+</script>
+</body> </textarea>
+</body>
+</html>
