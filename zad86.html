@@ -1,0 +1,33 @@
+
+<html>
+<head>
+
+<title> Zadanie 86</title>
+<script language="JavaScript">
+function p1 (){
+pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+}
+function p2 (){
+dzis= new Date()
+pokaz2.innerHTML="<br>Aktualna data : "+(dzis.getMonth()+1)+"."+dzis.getDate()+"."+dzis.getFullYear();
+}
+function p3 (){
+dzis= new Date()
+pokaz3.innerHTML="<br>Aktualny czas : "+dzis.getHours()+":"+dzis.getMinutes();
+}
+</script>
+</head>
+<body>
+<form>
+<a onclick="p1('  ')"><img src="p1.jpg" alt="p1()" border="0" onmouseover="this.src = 'p11.jpg'"onmouseout="this.src ='p1.jpg'" /></a><br>
+<a onclick="p2('  ')"><img src="p2.jpg" alt="p2()" border="0" onmouseover="this.src = 'p22.jpg'"onmouseout="this.src ='p2.jpg'" /></a>
+<a onclick="p3('  ')"><img src="p3.jpg" alt="p3()" border="0" onmouseover="this.src = 'p33.jpg'"onmouseout="this.src ='p3.jpg'" /></a>
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+<tr id="pokaz3"></tr>
+</table>
+
+</body>
+</html>
